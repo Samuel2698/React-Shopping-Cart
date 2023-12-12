@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 * {
-  margin: 2px;
+  margin: 0px;
   padding: 2px;
   box-sizing: border-box;
 }
@@ -33,4 +33,13 @@ button:hover {
 
 button:active {
   background-color: rgb(201, 200, 200);
+}
+
+select {
+  cursor: pointer;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }

@@ -22,12 +22,7 @@
 
 .products img {
   height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
+  object-fit: contain;
 }
 
 .products-list {
@@ -43,4 +38,31 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
+}
+
+.filters {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filters input {
+  cursor: pointer;
+}
+
+@media (width<=450px) {
+  .filters {
+    flex-direction: column;
+  }
+
+  .price {
+    margin-bottom: 1rem;
+  }
 }
