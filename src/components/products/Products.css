@@ -1,9 +1,3 @@
-.title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .products {
   width: 100%;
 }
@@ -38,31 +32,4 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
-}
-
-.filters {
-  margin-top: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.price {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.filters input {
-  cursor: pointer;
-}
-
-@media (width<=450px) {
-  .filters {
-    flex-direction: column;
-  }
-
-  .price {
-    margin-bottom: 1rem;
-  }
 }

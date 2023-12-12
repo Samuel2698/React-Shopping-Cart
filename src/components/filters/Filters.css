@@ -1,0 +1,35 @@
+.filters {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price label {
+  padding-right: 8px;
+}
+
+.filters input {
+  cursor: pointer;
+}
+
+.category label {
+  margin-left: 1rem;
+  padding-right: 8px;
+}
+
+@media (width<=450px) {
+  .filters {
+    flex-direction: column;
+  }
+
+  .price {
+    margin-bottom: 1rem;
+  }
+}
