@@ -1,5 +1,4 @@
 import './Products.css'
-
 import { AddToCartIcon } from '../Icons'
 
 export function Products({ products }) {
@@ -24,9 +23,7 @@ export function Products({ products }) {
           ))}
         </ul>
       ) : (
-        <p style={{ fontSize: '28px', textAlign: 'center', marginTop: '50px' }}>
-          There are no products 🤷‍♂️
-        </p>
+        <p className="no-products">There are no products 🤷‍♂️</p>
       )}
     </main>
   )

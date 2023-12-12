@@ -1,11 +1,12 @@
 import './Footer.css'
 
-export function Footer() {
+export function Footer({ filters }) {
   return (
     <footer className="footer">
-      <h4>React Test ⚛️</h4>
+      {JSON.stringify(filters, null, 1)}
+      {/* <h4>React Test ⚛️</h4>
       <span>@samueldev</span>
-      <h5>Shopping Cart with useContext & useReducer</h5>
+      <h5>Shopping Cart with useContext & useReducer</h5> */}
     </footer>
   )
 }

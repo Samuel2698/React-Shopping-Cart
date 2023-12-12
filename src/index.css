@@ -49,3 +49,9 @@ select {
   align-items: center;
   justify-content: center;
 }
+
+.no-products {
+  margin-top: 50px;
+  font-size: 28px;
+  text-align: center;
+}
