@@ -1,22 +1,22 @@
 import { products as initialProducts } from './mocks/products.json'
-import { useState } from 'react'
 import { useFilters } from './hooks/useFilters'
 import { Header } from './components/Header'
+import { Cart } from './components/cart/Cart'
 import { Products } from './components/products/Products'
 import { Footer } from './components/footer/Footer'
 import { IS_DEVELOPMENT } from './config'
 
 function App() {
-  const [products] = useState(initialProducts)
-  const { filters, setFilters, filterProducts } = useFilters()
+  const { filterProducts } = useFilters()
 
-  const filteredProducts = filterProducts(products)
+  const filteredProducts = filterProducts(initialProducts)
 
   return (
     <>
-      <Header changeFilters={setFilters} title="Shopping Cart 🛒" />
+      <Header title="Shopping Cart 🛒" />
+      <Cart />
       <Products products={filteredProducts} />
-      {IS_DEVELOPMENT && <Footer filters={filters} />}
+      {IS_DEVELOPMENT && <Footer />}
     </>
   )
 }

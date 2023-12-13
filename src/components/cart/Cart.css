@@ -1,0 +1,82 @@
+.cart {
+  right: 0px;
+  top: 0px;
+  width: 20%;
+  height: 0;
+  padding: 32px;
+  position: fixed;
+  display: block;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  -webkit-transition: opacity 0.5s ease, visibility 0.5s ease;
+  -moz-transition: opacity 0.5s ease, visibility 0.5s ease;
+  -ms-transition: opacity 0.5s ease, visibility 0.5s ease;
+  -o-transition: opacity 0.5s ease, visibility 0.5s ease;
+  color: #fff;
+  background: #000;
+}
+
+.cart-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cart img {
+  aspect-ratio: 16/9;
+  width: 100%;
+}
+
+.cart-text {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.cart footer {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart footer button {
+  padding: 8px 32px;
+  font-weight: bolder;
+}
+
+.cart-button {
+  align-items: center;
+  background: rgb(3, 144, 239);
+  border-radius: 9999px;
+  cursor: pointer;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  padding: 4px;
+  position: fixed;
+  right: 14px;
+  top: 22px;
+  transition: all 0.3s ease;
+  width: 32px;
+  z-index: 9999;
+}
+
+.cart-button:hover {
+  scale: 1.1;
+}
+
+.cart-button ~ input:checked ~ .cart,
+.cart-button ~ input:not(:checked) ~ .cart {
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.cart-button ~ input:not(:checked) ~ .cart {
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+}

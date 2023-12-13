@@ -8,7 +8,7 @@ export function Products({ products }) {
         <ul>
           {products.slice(0, 10).map((product) => (
             <li key={product.id}>
-              <img src={product.thumbnail} alt={product.title} />
+              <img src={product.thumbnail} alt={product.title} loading="lazy" />
               <div className="products-list">
                 <div>
                   <strong>{product.title}</strong> ${product.price}
